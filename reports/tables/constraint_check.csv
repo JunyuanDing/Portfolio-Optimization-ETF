@@ -1,0 +1,2 @@
+Max Budget Violation,Max Long-only Violation,Max Upper-bound Violation,Max Target-volatility Violation,Number of Solver Failures,Number of Fallback Uses,Average Solver Time,Number of Rebalance Dates
+2.220446049250313e-16,0.0,2.2611024164120863e-10,4.948178880526122e-10,0,0,0.004822242799999985,180

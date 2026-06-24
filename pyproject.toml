@@ -1,0 +1,11 @@
+[project]
+name = "robust-forecast-aware-etf-allocation"
+version = "0.1.0"
+description = "Robust forecast-aware mean-variance optimization for multi-asset ETF allocation."
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+

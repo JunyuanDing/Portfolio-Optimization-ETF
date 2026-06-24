@@ -1,0 +1,15 @@
+Ticker,Asset Group,Role,Included in Risky Universe,Included in Alpha Signal,Included in Covariance Estimation,Included in Cash Sleeve
+SPY,Equity,Risky ETF,True,True,True,False
+QQQ,Equity,Risky ETF,True,True,True,False
+IWM,Equity,Risky ETF,True,True,True,False
+EFA,Equity,Risky ETF,True,True,True,False
+EEM,Equity,Risky ETF,True,True,True,False
+TLT,Treasury,Risky ETF,True,True,True,False
+IEF,Treasury,Risky ETF,True,True,True,False
+SHY,Treasury,Risky ETF,True,True,True,False
+LQD,Credit,Risky ETF,True,True,True,False
+HYG,Credit,Risky ETF,True,True,True,False
+GLD,Real Assets,Risky ETF,True,True,True,False
+DBC,Real Assets,Risky ETF,True,True,True,False
+VNQ,Real Assets,Risky ETF,True,True,True,False
+BIL,Cash,Cash Proxy,False,False,False,True

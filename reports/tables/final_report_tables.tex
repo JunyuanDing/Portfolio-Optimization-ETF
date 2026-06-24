@@ -1,0 +1,234 @@
+\newcommand{\ETFUniverseTable}{%
+\begin{table}[H]
+\centering
+\caption{ETF universe and modeling roles. BIL is used only as the cash proxy.}
+\label{tab:etf_universe}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llllll}
+\toprule
+Group & Tickers & Role & Alpha & Covariance & Cash Sleeve \\
+\midrule
+Equity & SPY, QQQ, IWM, EFA, EEM & Risky ETF & Yes & Yes & No \\
+Treasury & TLT, IEF, SHY & Risky ETF & Yes & Yes & No \\
+Credit & LQD, HYG & Risky ETF & Yes & Yes & No \\
+Real Assets & GLD, DBC, VNQ & Risky ETF & Yes & Yes & No \\
+Cash & BIL & Cash proxy & No & No & Yes \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\MainPerformanceTable}{%
+\begin{table}[H]
+\centering
+\caption{Main performance summary using net returns after transaction costs.}
+\label{tab:main_performance}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Strategy & Ann. Return & Ann. Vol. & Sharpe & Max DD & Calmar & Final NV & Avg TO & Cost Drag & Avg Cash \\
+\midrule
+Equal Weight & 6.9\% & 9.5\% & 0.75 & -20.7\% & 0.34 & 2.73 & 1.7\% & 0.02\% & 0.0\% \\
+Minimum Variance & 3.1\% & 4.3\% & 0.73 & -14.6\% & 0.21 & 1.59 & 3.4\% & 0.04\% & 0.0\% \\
+Traditional MVO & 9.2\% & 12.1\% & 0.79 & -19.6\% & 0.47 & 3.74 & 19.0\% & 0.25\% & 0.0\% \\
+Proposed Strategy & 9.8\% & 10.2\% & 0.96 & -15.7\% & 0.62 & 4.04 & 27.7\% & 0.37\% & 9.8\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\DrawdownSummaryTable}{%
+\begin{table}[H]
+\centering
+\caption{Maximum drawdown periods for the four main strategies.}
+\label{tab:drawdown_summary}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Strategy & Max DD & Start & Valley & Recovery & Days \\
+\midrule
+Equal Weight & -20.7\% & 2021-11-09 & 2022-10-14 & 2024-06-18 & 952 \\
+Minimum Variance & -14.6\% & 2021-09-15 & 2022-10-20 & 2024-09-19 & 1100 \\
+Traditional MVO & -19.6\% & 2018-01-26 & 2018-12-24 & 2020-01-16 & 720 \\
+Proposed Strategy & -15.7\% & 2020-02-19 & 2020-03-19 & 2020-07-29 & 161 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\SignalRiskDiagnosticsTable}{%
+\begin{table}[H]
+\centering
+\caption{Signal and risk-forecast diagnostics for the proposed strategy.}
+\label{tab:signal_risk_diagnostics}
+\begin{tabular}{lr}
+\toprule
+Diagnostic & Value \\
+\midrule
+Average cross-sectional IC & 0.072 \\
+IC standard deviation & 0.458 \\
+IC t-statistic & 2.11 \\
+IC during normal periods & 0.088 \\
+IC during drawdown periods & 0.015 \\
+Positive IC ratio & 55.3\% \\
+Average predicted volatility & 8.2\% \\
+Average target volatility & 11.8\% \\
+Average realized 21-day volatility & 9.3\% \\
+Average realized/predicted ratio & 1.28 \\
+Target-volatility binding rate & 28.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+}
+\newcommand{\TargetVolSensitivityTable}{%
+\begin{table}[H]
+\centering
+\caption{Target-volatility sensitivity for the proposed strategy.}
+\label{tab:target_vol_sensitivity}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Target Volatility & Ann. Return & Ann. Vol. & Sharpe & Max DD & Calmar & Avg Cash & Avg TO \\
+\midrule
+6.0\% & 8.5\% & 8.6\% & 0.99 & -13.4\% & 0.63 & 18.7\% & 35.0\% \\
+8.0\% & 9.5\% & 9.6\% & 0.98 & -14.2\% & 0.66 & 12.9\% & 31.1\% \\
+10.0\% & 9.8\% & 10.2\% & 0.96 & -15.7\% & 0.62 & 9.8\% & 27.7\% \\
+12.0\% & 9.6\% & 10.6\% & 0.92 & -16.5\% & 0.58 & 8.1\% & 26.3\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\AlphaScaleSensitivityTable}{%
+\begin{table}[H]
+\centering
+\caption{Alpha-scale sensitivity for the proposed strategy.}
+\label{tab:alpha_scale_sensitivity}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Alpha Scale & Ann. Return & Ann. Vol. & Sharpe & Max DD & Calmar & Avg Cash & Avg TO \\
+\midrule
+1.0\% & 9.3\% & 9.3\% & 1.00 & -13.8\% & 0.68 & 15.9\% & 27.1\% \\
+2.0\% & 9.4\% & 10.0\% & 0.95 & -15.1\% & 0.63 & 11.0\% & 27.5\% \\
+3.0\% & 9.8\% & 10.2\% & 0.96 & -15.7\% & 0.62 & 9.8\% & 27.7\% \\
+5.0\% & 10.1\% & 10.4\% & 0.98 & -17.0\% & 0.59 & 9.0\% & 28.2\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\RhoSensitivityTable}{%
+\begin{table}[H]
+\centering
+\caption{Robust penalty sensitivity for the proposed strategy.}
+\label{tab:rho_sensitivity}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Rho Setting & Ann. Return & Ann. Vol. & Sharpe & Max DD & Calmar & Avg Cash \\
+\midrule
+rho\_multiplier=0 & 10.2\% & 10.5\% & 0.98 & -19.3\% & 0.53 & 8.9\% \\
+rho\_multiplier=0.5 & 10.2\% & 10.4\% & 0.98 & -17.5\% & 0.58 & 9.2\% \\
+rho\_multiplier=1 & 9.8\% & 10.2\% & 0.96 & -15.7\% & 0.62 & 9.8\% \\
+rho\_multiplier=1.5 & 9.5\% & 10.1\% & 0.95 & -14.7\% & 0.64 & 10.5\% \\
+rho\_multiplier=2 & 9.5\% & 10.0\% & 0.96 & -14.7\% & 0.64 & 11.3\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\CovarianceSensitivityTable}{%
+\begin{table}[H]
+\centering
+\caption{Covariance estimator sensitivity. Ledoit-Wolf is a robustness case, not the final implemented risk model.}
+\label{tab:covariance_sensitivity}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Estimator & Ann. Return & Ann. Vol. & Sharpe & Max DD & Calmar & Avg Cash & Real./Pred. \\
+\midrule
+Sample Covariance & 9.8\% & 10.2\% & 0.97 & -16.2\% & 0.60 & 10.2\% & 1.21 \\
+Ledoit-Wolf Shrinkage & 10.2\% & 10.4\% & 0.98 & -15.1\% & 0.67 & 9.7\% & 1.31 \\
+Final Implemented Covariance Method & 9.8\% & 10.2\% & 0.96 & -15.7\% & 0.62 & 9.8\% & 1.25 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\TransactionCostSensitivityTable}{%
+\begin{table}[H]
+\centering
+\caption{Transaction-cost sensitivity for the proposed strategy.}
+\label{tab:transaction_cost_sensitivity}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Cost Rate & Ann. Return & Ann. Vol. & Sharpe & Max DD & Ann. Cost Drag & Final NV \\
+\midrule
+0 bps & 10.1\% & 10.2\% & 1.00 & -15.7\% & 0.00\% & 4.25 \\
+5 bps & 10.0\% & 10.2\% & 0.98 & -15.7\% & 0.18\% & 4.14 \\
+10 bps & 9.8\% & 10.2\% & 0.96 & -15.7\% & 0.37\% & 4.04 \\
+25 bps & 9.2\% & 10.2\% & 0.92 & -15.8\% & 0.91\% & 3.75 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}
+\newcommand{\ImplementationChecksTable}{%
+\begin{table}[H]
+\centering
+\caption{Constraint, solver, and no-look-ahead implementation checks.}
+\label{tab:implementation_checks}
+\begin{tabular}{lr}
+\toprule
+Check & Value \\
+\midrule
+Max budget violation & 2.22e-16 \\
+Max long-only violation & 0.00e+00 \\
+Max upper-bound violation & 2.26e-10 \\
+Max target-volatility violation & 4.95e-10 \\
+Solver failures & 0 \\
+Fallback uses & 0 \\
+Rebalance dates & 180 \\
+Timing checks passed & 5/5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+}
+\newcommand{\MethodologyCodeConsistencyTable}{%
+\begin{table}[H]
+\centering
+\caption{Methodology-code consistency checklist for the final proposed strategy.}
+\label{tab:methodology_code_consistency}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{ll}
+\toprule
+Item & Implemented value \\
+\midrule
+$\alpha_{scale}$ & 0.03 \\
+EWMA covariance decay & 0.94 \\
+Transaction cost rate & 0.001 per one-way turnover \\
+L2 concentration penalty & 0.01 \\
+$v_t$ & $\operatorname{clip}(\sigma^{EW,EWMA20}_t / \sigma^{EW,252}_t,0.5,2.5)$ \\
+$\rho_t$ & $\operatorname{clip}(0.08v_t,0.03,0.25)$ \\
+$\sigma_t^*$ & $\operatorname{clip}(0.10/v_t,0.04,0.16)$ \\
+Single-ETF upper bound & 0.25 \\
+Cash proxy & BIL \\
+BIL in alpha/covariance & Excluded from both \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+}

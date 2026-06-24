@@ -1,0 +1,143 @@
+{
+  "source": "Yahoo Finance chart API",
+  "endpoint": "https://query1.finance.yahoo.com/v8/finance/chart/{ticker}",
+  "field": "indicators.adjclose[0].adjclose",
+  "start": "2010-01-01",
+  "period2_exclusive": "2026-02-01",
+  "downloaded_at_utc": "2026-06-23T08:09:58.647210+00:00",
+  "tickers": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "EFA",
+    "EEM",
+    "TLT",
+    "IEF",
+    "SHY",
+    "LQD",
+    "HYG",
+    "GLD",
+    "DBC",
+    "VNQ",
+    "BIL"
+  ],
+  "notes": [
+    "Raw adjusted close prices are saved without manual modification.",
+    "Yahoo Finance is a reproducible public market-data source, not a primary exchange feed.",
+    "Local raw file is truncated to the final study sample ending January 2026."
+  ],
+  "per_ticker": {
+    "SPY": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "QQQ": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NasdaqGM",
+      "instrument_type": "ETF"
+    },
+    "IWM": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "EFA": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "EEM": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "TLT": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NasdaqGM",
+      "instrument_type": "ETF"
+    },
+    "IEF": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NasdaqGM",
+      "instrument_type": "ETF"
+    },
+    "SHY": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NasdaqGM",
+      "instrument_type": "ETF"
+    },
+    "LQD": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "HYG": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "GLD": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "DBC": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "VNQ": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    },
+    "BIL": {
+      "rows": 4044,
+      "first_date": "2010-01-04",
+      "last_date": "2026-01-30",
+      "currency": "USD",
+      "exchange": "NYSEArca",
+      "instrument_type": "ETF"
+    }
+  }
+}

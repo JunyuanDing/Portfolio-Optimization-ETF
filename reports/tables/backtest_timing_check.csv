@@ -1,0 +1,6 @@
+Check,Pass,Explanation
+signal window ends no later than rebalance date,True,Signals are timestamped at rebalance dates and computed inside run_backtest from prices.loc[:rebalance_date].
+covariance window ends no later than rebalance date,True,Covariance inputs are sliced from history_returns.loc[:rebalance_date].
+weights are applied only after rebalance date,True,Holding returns are selected with returns.index > rebalance_date.
+future returns are not used in weight computation,True,run_backtest asserts holding_start > rebalance_date before applying weights.
+BIL is excluded from alpha and covariance if required,True,Signal records contain risky ETFs only; covariance is built from risky_assets excluding BIL.
